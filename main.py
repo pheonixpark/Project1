@@ -15,7 +15,7 @@ class Boy:
     global running_right
     global jump1
     def __init__(self):
-        self.x, self.y = random.randint(100,700),90
+        self.x, self.y = 100,90
         self.image=load_image('animation_sheet.png')
         self.frame=0
     def draw(self):
@@ -64,7 +64,7 @@ def handle_events():
         elif (event.type, event.key) == (SDL_KEYUP, SDLK_LEFT):
             dir += 1
         elif (event.type, event.key) == (SDL_KEYDOWN, SDLK_z):
-                jump1+=300
+            jump1+=300
 
 
 open_canvas()
